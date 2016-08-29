@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class QPdoDatabase</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-Actions.html">
+						Actions					</a>
+
+						</li>
+				<li>
+					<a href="package-Codegen.html">
+						Codegen					</a>
+
+						</li>
+				<li>
+					<a href="package-Controls.html">
+						Controls<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-Controls.Base.html">
+						Base					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-DatabaseAdapters.html">
+						DatabaseAdapters					</a>
+
+						</li>
+				<li>
+					<a href="package-Events.html">
+						Events					</a>
+
+						</li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="package-Sessions.html">
+						Sessions					</a>
+
+						</li>
+				<li>
+					<a href="package-Tests.html">
+						Tests					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-QDatabaseBase.html">QDatabaseBase</a></li>
+				<li><a href="class-QDatabaseFieldType.html">QDatabaseFieldType</a></li>
+				<li><a href="class-QDatabaseForeignKey.html">QDatabaseForeignKey</a></li>
+				<li><a href="class-QDatabaseIndex.html">QDatabaseIndex</a></li>
+				<li><a href="class-QDatabaseRowBase.html">QDatabaseRowBase</a></li>
+				<li><a href="class-QInformixPdoDatabase.html">QInformixPdoDatabase</a></li>
+				<li><a href="class-QMySqlDatabase.html">QMySqlDatabase</a></li>
+				<li><a href="class-QMySqlDatabaseField.html">QMySqlDatabaseField</a></li>
+				<li><a href="class-QMySqli5ClusterDatabase.html">QMySqli5ClusterDatabase</a></li>
+				<li><a href="class-QMySqli5Database.html">QMySqli5Database</a></li>
+				<li><a href="class-QMySqli5DatabaseField.html">QMySqli5DatabaseField</a></li>
+				<li><a href="class-QMySqli5DatabaseResult.html">QMySqli5DatabaseResult</a></li>
+				<li><a href="class-QMySqliDatabase.html">QMySqliDatabase</a></li>
+				<li><a href="class-QMySqliDatabaseField.html">QMySqliDatabaseField</a></li>
+				<li><a href="class-QMySqliDatabaseResult.html">QMySqliDatabaseResult</a></li>
+				<li><a href="class-QMySqliDatabaseRow.html">QMySqliDatabaseRow</a></li>
+				<li><a href="class-QOracleDatabase.html">QOracleDatabase</a></li>
+				<li><a href="class-QOracleDatabaseRow.html">QOracleDatabaseRow</a></li>
+				<li class="active"><a href="class-QPdoDatabase.html">QPdoDatabase</a></li>
+				<li><a href="class-QPostgreSqlDatabase.html">QPostgreSqlDatabase</a></li>
+				<li><a href="class-QPostgreSqlDatabaseField.html">QPostgreSqlDatabaseField</a></li>
+				<li><a href="class-QPostgreSqlDatabaseResult.html">QPostgreSqlDatabaseResult</a></li>
+				<li><a href="class-QPostgreSqlDatabaseRow.html">QPostgreSqlDatabaseRow</a></li>
+				<li><a href="class-QPostgreSqlPdoDatabase.html">QPostgreSqlPdoDatabase</a></li>
+				<li><a href="class-QSqLite3PdoDatabase.html">QSqLite3PdoDatabase</a></li>
+				<li><a href="class-QSqlServer2005Database.html">QSqlServer2005Database</a></li>
+				<li><a href="class-QSqlServer2005DatabaseField.html">QSqlServer2005DatabaseField</a></li>
+				<li><a href="class-QSqlServer2005DatabaseResult.html">QSqlServer2005DatabaseResult</a></li>
+				<li><a href="class-QSqlServer2005DatabaseRow.html">QSqlServer2005DatabaseRow</a></li>
+				<li><a href="class-QSqlServerDatabase.html">QSqlServerDatabase</a></li>
+				<li><a href="class-QSqlServerDatabaseField.html">QSqlServerDatabaseField</a></li>
+				<li><a href="class-QSqlServerDatabaseResult.html">QSqlServerDatabaseResult</a></li>
+				<li><a href="class-QSqlServerDatabaseRow.html">QSqlServerDatabaseRow</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-QDatabaseExceptionBase.html">QDatabaseExceptionBase</a></li>
+				<li><a href="class-QMySqliDatabaseException.html">QMySqliDatabaseException</a></li>
+				<li><a href="class-QOracleDatabaseException.html">QOracleDatabaseException</a></li>
+				<li><a href="class-QPostgreSqlDatabaseException.html">QPostgreSqlDatabaseException</a></li>
+				<li><a href="class-QSqlServer2005DatabaseException.html">QSqlServer2005DatabaseException</a></li>
+				<li><a href="class-QSqlServerDatabaseException.html">QSqlServerDatabaseException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QPdoDatabase</h1>
+
+
+	<div class="description">
+	<p>PDO Generic database driver</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-QBaseClass.html"><span>QBaseClass</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-QDatabaseBase.html"><span>QDatabaseBase</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>QPdoDatabase</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-QInformixPdoDatabase.html">QInformixPdoDatabase</a>, 
+			<a href="class-QPostgreSqlPdoDatabase.html">QPostgreSqlPdoDatabase</a>, 
+			<a href="class-QSqLite3PdoDatabase.html">QSqLite3PdoDatabase</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		
+		<b>Package:</b> <a href="package-DatabaseAdapters.html">DatabaseAdapters</a><br>
+
+				<b>Author:</b>
+				Marcos Sanchez [marcosdsanchez at thinkclear dot com dot ar]<br>
+			<b>Located at</b> <a href="source-class-QPdoDatabase.html#2-65" title="Go to source code">includes/database/QPdoDatabase.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="ExecuteNonQuery" id="_ExecuteNonQuery">
+
+		<td class="attributes"><code>
+			 protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteNonQuery">#</a>
+		<code><a href="source-class-QPdoDatabase.html#23-29" title="Go to source code">ExecuteNonQuery</a>( <span>string <var>$strNonQuery</var></span> )</code>
+
+		<div class="description short">
+			<p>Sends a non-SELECT query (such as INSERT, UPDATE, DELETE, TRUNCATE) to DB server.
+In most cases, the results of this function are not used and you should not send
+'SELECT' queries using this method because a result is not guaranteed to be returned</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sends a non-SELECT query (such as INSERT, UPDATE, DELETE, TRUNCATE) to DB server.
+In most cases, the results of this function are not used and you should not send
+'SELECT' queries using this method because a result is not guaranteed to be returned</p>
+
+<p>If there was an error, it would most probably be caught as an exception.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strNonQuery</var></dt>
+					<dd>The Query to be executed</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>Result that the database returns after running the query
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-QPdoDatabase.html#31-43" title="Go to source code">__get</a>( <span>string <var>$strName</var></span> )</code>
+
+		<div class="description short">
+			<p>PHP magic method</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>PHP magic method</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd>Property name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception|<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QDatabaseBase.html#___get">QDatabaseBase::__get()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Close" id="_Close">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Close">#</a>
+		<code><a href="source-class-QPdoDatabase.html#45-47" title="Go to source code">Close</a>( )</code>
+
+		<div class="description short">
+			<p>Closes the database connection</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Closes the database connection</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteTransactionBegin" id="_ExecuteTransactionBegin">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteTransactionBegin">#</a>
+		<code><a href="source-class-QPdoDatabase.html#50-55" title="Go to source code">ExecuteTransactionBegin</a>( )</code>
+
+		<div class="description short">
+			<p>This function actually begins the database transaction.
+Must be implemented in all subclasses.
+The "TransactionBegin" wrapper are meant to be called by end-user code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function actually begins the database transaction.
+Must be implemented in all subclasses.
+The "TransactionBegin" wrapper are meant to be called by end-user code</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteTransactionCommit" id="_ExecuteTransactionCommit">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteTransactionCommit">#</a>
+		<code><a href="source-class-QPdoDatabase.html#57-59" title="Go to source code">ExecuteTransactionCommit</a>( )</code>
+
+		<div class="description short">
+			<p>This function actually commits the database transaction.
+Must be implemented in all subclasses.
+The "TransactionCommit" wrapper are meant to be called by end-user code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function actually commits the database transaction.
+Must be implemented in all subclasses.
+The "TransactionCommit" wrapper are meant to be called by end-user code</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteTransactionRollBack" id="_ExecuteTransactionRollBack">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteTransactionRollBack">#</a>
+		<code><a href="source-class-QPdoDatabase.html#61-63" title="Go to source code">ExecuteTransactionRollBack</a>( )</code>
+
+		<div class="description short">
+			<p>This function actually rolls back the database transaction.
+Must be implemented in all subclasses.
+The "TransactionRollBack" wrapper are meant to be called by end-user code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function actually rolls back the database transaction.
+Must be implemented in all subclasses.
+The "TransactionRollBack" wrapper are meant to be called by end-user code</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QDatabaseBase.html#methods">QDatabaseBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QDatabaseBase.html#_Connect">Connect()</a>, 
+			<a href="class-QDatabaseBase.html#_EnableProfiling">EnableProfiling()</a>, 
+			<a href="class-QDatabaseBase.html#_EscapeIdentifier">EscapeIdentifier()</a>, 
+			<a href="class-QDatabaseBase.html#_EscapeIdentifiers">EscapeIdentifiers()</a>, 
+			<a href="class-QDatabaseBase.html#_EscapeIdentifiersAndValues">EscapeIdentifiersAndValues()</a>, 
+			<a href="class-QDatabaseBase.html#_EscapeValues">EscapeValues()</a>, 
+			<a href="class-QDatabaseBase.html#_ExecuteProcedure">ExecuteProcedure()</a>, 
+			<a href="class-QDatabaseBase.html#_ExecuteQuery">ExecuteQuery()</a>, 
+			<a href="class-QDatabaseBase.html#_ExplainStatement">ExplainStatement()</a>, 
+			<a href="class-QDatabaseBase.html#_ExtractCommentOptions">ExtractCommentOptions()</a>, 
+			<a href="class-QDatabaseBase.html#_GetFieldsForTable">GetFieldsForTable()</a>, 
+			<a href="class-QDatabaseBase.html#_GetForeignKeysForTable">GetForeignKeysForTable()</a>, 
+			<a href="class-QDatabaseBase.html#_GetIndexesForTable">GetIndexesForTable()</a>, 
+			<a href="class-QDatabaseBase.html#_GetTables">GetTables()</a>, 
+			<a href="class-QDatabaseBase.html#_InsertId">InsertId()</a>, 
+			<a href="class-QDatabaseBase.html#_InsertOrUpdate">InsertOrUpdate()</a>, 
+			<a href="class-QDatabaseBase.html#_NonQuery">NonQuery()</a>, 
+			<a href="class-QDatabaseBase.html#_OutputProfiling">OutputProfiling()</a>, 
+			<a href="class-QDatabaseBase.html#_PrepareStatement">PrepareStatement()</a>, 
+			<a href="class-QDatabaseBase.html#_Query">Query()</a>, 
+			<a href="class-QDatabaseBase.html#_SqlLimitVariablePrefix">SqlLimitVariablePrefix()</a>, 
+			<a href="class-QDatabaseBase.html#_SqlLimitVariableSuffix">SqlLimitVariableSuffix()</a>, 
+			<a href="class-QDatabaseBase.html#_SqlSortByVariable">SqlSortByVariable()</a>, 
+			<a href="class-QDatabaseBase.html#_SqlVariable">SqlVariable()</a>, 
+			<a href="class-QDatabaseBase.html#_TransactionBegin">TransactionBegin()</a>, 
+			<a href="class-QDatabaseBase.html#_TransactionCommit">TransactionCommit()</a>, 
+			<a href="class-QDatabaseBase.html#_TransactionRollBack">TransactionRollBack()</a>, 
+			<a href="class-QDatabaseBase.html#___construct">__construct()</a>, 
+			<a href="class-QDatabaseBase.html#___set">__set()</a>, 
+			<a href="class-QDatabaseBase.html#_transactionCacheFlush">transactionCacheFlush()</a>, 
+			<a href="class-QDatabaseBase.html#_transactionCacheRestore">transactionCacheRestore()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QBaseClass.html#methods">QBaseClass</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QBaseClass.html#_OverrideAttributes">OverrideAttributes()</a>, 
+			<a href="class-QBaseClass.html#___call">__call()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-QDatabaseBase.html#constants">QDatabaseBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QDatabaseBase.html#Adapter"><b>Adapter</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="objPdo" id="$objPdo">
+		<td class="attributes"><code>
+			protected  
+			PDO
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QPdoDatabase.html#11-15" title="Go to source code"><var>$objPdo</var></a>
+
+			<div class="description short">
+				<p>connection handler</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>connection handler</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objPdo" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objMostRecentResult" id="$objMostRecentResult">
+		<td class="attributes"><code>
+			protected  
+			PDOStatement
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QPdoDatabase.html#16-20" title="Go to source code"><var>$objMostRecentResult</var></a>
+
+			<div class="description short">
+				<p>most recent query result</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>most recent query result</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objMostRecentResult" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-QDatabaseBase.html#properties">QDatabaseBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QDatabaseBase.html#$blnConnectedFlag"><var>$blnConnectedFlag</var></a>, 
+			<a href="class-QDatabaseBase.html#$blnEnableProfiling"><var>$blnEnableProfiling</var></a>, 
+			<a href="class-QDatabaseBase.html#$blnOnlyFullGroupBy"><var>$blnOnlyFullGroupBy</var></a>, 
+			<a href="class-QDatabaseBase.html#$intDatabaseIndex"><var>$intDatabaseIndex</var></a>, 
+			<a href="class-QDatabaseBase.html#$intTransactionDepth"><var>$intTransactionDepth</var></a>, 
+			<a href="class-QDatabaseBase.html#$objCacheProviderStack"><var>$objCacheProviderStack</var></a>, 
+			<a href="class-QDatabaseBase.html#$objConfigArray"><var>$objConfigArray</var></a>, 
+			<a href="class-QDatabaseBase.html#$strEscapeIdentifierBegin"><var>$strEscapeIdentifierBegin</var></a>, 
+			<a href="class-QDatabaseBase.html#$strEscapeIdentifierEnd"><var>$strEscapeIdentifierEnd</var></a>, 
+			<a href="class-QDatabaseBase.html#$strProfileArray"><var>$strProfileArray</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-QDatabaseBase.html#properties">QDatabaseBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QDatabaseBase.html#m$Adapter"><var>$Adapter</var></a>, 
+			<a href="class-QDatabaseBase.html#m$AffectedRows"><var>$AffectedRows</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Caching"><var>$Caching</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Database"><var>$Database</var></a>, 
+			<a href="class-QDatabaseBase.html#m$DatabaseIndex"><var>$DatabaseIndex</var></a>, 
+			<a href="class-QDatabaseBase.html#m$DateFormat"><var>$DateFormat</var></a>, 
+			<a href="class-QDatabaseBase.html#m$EnableProfiling"><var>$EnableProfiling</var></a>, 
+			<a href="class-QDatabaseBase.html#m$EscapeIdentifierBegin"><var>$EscapeIdentifierBegin</var></a>, 
+			<a href="class-QDatabaseBase.html#m$EscapeIdentifierEnd"><var>$EscapeIdentifierEnd</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Host"><var>$Host</var></a>, 
+			<a href="class-QDatabaseBase.html#m$OnlyFullGroupBy"><var>$OnlyFullGroupBy</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Password"><var>$Password</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Port"><var>$Port</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Profile"><var>$Profile</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Protocol"><var>$Protocol</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Server"><var>$Server</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Service"><var>$Service</var></a>, 
+			<a href="class-QDatabaseBase.html#m$Username"><var>$Username</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

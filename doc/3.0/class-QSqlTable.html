@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class QSqlTable</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-Actions.html">
+						Actions					</a>
+
+						</li>
+				<li>
+					<a href="package-Codegen.html">
+						Codegen					</a>
+
+						</li>
+				<li>
+					<a href="package-Controls.html">
+						Controls<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-Controls.Base.html">
+						Base					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-DatabaseAdapters.html">
+						DatabaseAdapters					</a>
+
+						</li>
+				<li>
+					<a href="package-Events.html">
+						Events					</a>
+
+						</li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="package-Sessions.html">
+						Sessions					</a>
+
+						</li>
+				<li>
+					<a href="package-Tests.html">
+						Tests					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-JqControlGen.html">JqControlGen</a></li>
+				<li><a href="class-QCodeGen.html">QCodeGen</a></li>
+				<li><a href="class-QCodeGenBase.html">QCodeGenBase</a></li>
+				<li><a href="class-QConvertNotation.html">QConvertNotation</a></li>
+				<li><a href="class-QConvertNotationBase.html">QConvertNotationBase</a></li>
+				<li><a href="class-QDatabaseCodeGen.html">QDatabaseCodeGen</a></li>
+				<li><a href="class-QIndex.html">QIndex</a></li>
+				<li><a href="class-QManyToManyReference.html">QManyToManyReference</a></li>
+				<li><a href="class-QReference.html">QReference</a></li>
+				<li><a href="class-QRestServiceCodeGen.html">QRestServiceCodeGen</a></li>
+				<li><a href="class-QReverseReference.html">QReverseReference</a></li>
+				<li><a href="class-QSqlColumn.html">QSqlColumn</a></li>
+				<li class="active"><a href="class-QSqlTable.html">QSqlTable</a></li>
+				<li><a href="class-QTypeTable.html">QTypeTable</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QSqlTable</h1>
+
+
+	<div class="description">
+	<p>A helper class used by the QCubed Code Generator to describe a database Table</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-QBaseClass.html"><span>QBaseClass</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>QSqlTable</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Codegen.html">Codegen</a><br>
+
+			<b>Located at</b> <a href="source-class-QSqlTable.html#2-262" title="Go to source code">includes/codegen/QSqlTable.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-QSqlTable.html#81-92" title="Go to source code">__construct</a>( <span>string <var>$strName</var></span> )</code>
+
+		<div class="description short">
+			<p>Default Constructor.  Simply sets up the TableName and ensures that ReverseReferenceArray is a blank array.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Default Constructor.  Simply sets up the TableName and ensures that ReverseReferenceArray is a blank array.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd>Name of the Table</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetColumnByName" id="_GetColumnByName">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-QSqlColumn.html">QSqlColumn</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetColumnByName">#</a>
+		<code><a href="source-class-QSqlTable.html#95-108" title="Go to source code">GetColumnByName</a>( <span>string <var>$strColumnName</var></span> )</code>
+
+		<div class="description short">
+			<p>return the QSqlColumn object related to that column name</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>return the QSqlColumn object related to that column name</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strColumnName</var></dt>
+					<dd>Name of the column</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-QSqlColumn.html">QSqlColumn</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="HasColumn" id="_HasColumn">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_HasColumn">#</a>
+		<code><a href="source-class-QSqlTable.html#110-117" title="Go to source code">HasColumn</a>( <span>string <var>$strColumnName</var></span> )</code>
+
+		<div class="description short">
+			<p>Search within the table's columns for the given column</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Search within the table's columns for the given column</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strColumnName</var></dt>
+					<dd>Name of the column</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="LookupColumnPropertyName" id="_LookupColumnPropertyName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_LookupColumnPropertyName">#</a>
+		<code><a href="source-class-QSqlTable.html#119-130" title="Go to source code">LookupColumnPropertyName</a>( <span>string <var>$strColumnName</var></span> )</code>
+
+		<div class="description short">
+			<p>Return the property name for a given column name (false if it doesn't exists)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return the property name for a given column name (false if it doesn't exists)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strColumnName</var></dt>
+					<dd>name of the column</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="HasImmediateArrayExpansions" id="_HasImmediateArrayExpansions">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_HasImmediateArrayExpansions">#</a>
+		<code><a href="source-class-QSqlTable.html#132-140" title="Go to source code">HasImmediateArrayExpansions</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="HasExtendedArrayExpansions" id="_HasExtendedArrayExpansions">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_HasExtendedArrayExpansions">#</a>
+		<code><a href="source-class-QSqlTable.html#142-158" title="Go to source code">HasExtendedArrayExpansions</a>( <span><code><a href="class-QDatabaseCodeGen.html">QDatabaseCodeGen</a></code> <var>$objCodeGen</var></span>, <span> <var>$objCheckedTableArray</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-QSqlTable.html#167-221" title="Go to source code">__get</a>( <span>string <var>$strName</var></span> )</code>
+
+		<div class="description short">
+			<p>Override method to perform a property "Get"
+This will get the value of $strName</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Override method to perform a property "Get"
+This will get the value of $strName</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd>Name of the property to get</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br>
+					<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QBaseClass.html#___get">QBaseClass::__get()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-QSqlTable.html#223-261" title="Go to source code">__set</a>( <span>string <var>$strName</var></span>, <span>string <var>$mixValue</var></span> )</code>
+
+		<div class="description short">
+			<p>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd>Name of the property to set</dd>
+					<dt><var>$mixValue</var></dt>
+					<dd>New value of the property</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br>
+					<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QBaseClass.html#___set">QBaseClass::__set()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QBaseClass.html#methods">QBaseClass</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QBaseClass.html#_OverrideAttributes">OverrideAttributes()</a>, 
+			<a href="class-QBaseClass.html#___call">__call()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="intOwnerDbIndex" id="$intOwnerDbIndex">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#23-26" title="Go to source code"><var>$intOwnerDbIndex</var></a>
+
+			<div class="description short">
+				<p>DB Index to which it belongs in the configuration.inc.php and codegen_settings.xml files.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>DB Index to which it belongs in the configuration.inc.php and codegen_settings.xml files.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$intOwnerDbIndex" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strName" id="$strName">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#28-32" title="Go to source code"><var>$strName</var></a>
+
+			<div class="description short">
+				<p>Name of the table (as defined in the database)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Name of the table (as defined in the database)</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strName" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strClassName" id="$strClassName">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#34-38" title="Go to source code"><var>$strClassName</var></a>
+
+			<div class="description short">
+				<p>Name as a PHP Class</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Name as a PHP Class</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strClassName" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strClassNamePlural" id="$strClassNamePlural">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#40-44" title="Go to source code"><var>$strClassNamePlural</var></a>
+
+			<div class="description short">
+				<p>Pluralized Name as a collection of objects of this PHP Class</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Pluralized Name as a collection of objects of this PHP Class</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strClassNamePlural" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objColumnArray" id="$objColumnArray">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-QSqlColumn.html">QSqlColumn</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#46-50" title="Go to source code"><var>$objColumnArray</var></a>
+
+			<div class="description short">
+				<p>Array of Column objects (as indexed by Column name)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of Column objects (as indexed by Column name)</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objColumnArray" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objReverseReferenceArray" id="$objReverseReferenceArray">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-QReverseReference.html">QReverseReference</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#52-56" title="Go to source code"><var>$objReverseReferenceArray</var></a>
+
+			<div class="description short">
+				<p>Array of ReverseReverence objects (indexed numerically)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of ReverseReverence objects (indexed numerically)</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objReverseReferenceArray" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objManyToManyReferenceArray" id="$objManyToManyReferenceArray">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-QManyToManyReference.html">QManyToManyReference</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#58-62" title="Go to source code"><var>$objManyToManyReferenceArray</var></a>
+
+			<div class="description short">
+				<p>Array of ManyToManyReference objects (indexed numerically)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of ManyToManyReference objects (indexed numerically)</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objManyToManyReferenceArray" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objIndexArray" id="$objIndexArray">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-QIndex.html">QIndex</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#64-68" title="Go to source code"><var>$objIndexArray</var></a>
+
+			<div class="description short">
+				<p>Array of Index objects (indexed numerically)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of Index objects (indexed numerically)</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objIndexArray" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="options" id="$options">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#70-73" title="Go to source code"><var>$options</var></a>
+
+			<div class="description short">
+				<p>developer specified options.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>developer specified options.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$options" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="OwnerDbIndex" id="m$OwnerDbIndex">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#6" title="Go to source code"><var>$OwnerDbIndex</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Name" id="m$Name">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#7" title="Go to source code"><var>$Name</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ClassNamePlural" id="m$ClassNamePlural">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#8" title="Go to source code"><var>$ClassNamePlural</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ClassName" id="m$ClassName">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#8" title="Go to source code"><var>$ClassName</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ReferenceCount" id="m$ReferenceCount">
+		<td class="attributes"><code>
+			public  read-only
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QSqlTable.html#15" title="Go to source code"><var>$ReferenceCount</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

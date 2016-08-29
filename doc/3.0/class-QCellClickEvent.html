@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class QCellClickEvent</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-Actions.html">
+						Actions					</a>
+
+						</li>
+				<li>
+					<a href="package-Codegen.html">
+						Codegen					</a>
+
+						</li>
+				<li>
+					<a href="package-Controls.html">
+						Controls<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-Controls.Base.html">
+						Base					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-DatabaseAdapters.html">
+						DatabaseAdapters					</a>
+
+						</li>
+				<li>
+					<a href="package-Events.html">
+						Events					</a>
+
+						</li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="package-Sessions.html">
+						Sessions					</a>
+
+						</li>
+				<li>
+					<a href="package-Tests.html">
+						Tests					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-QBackspaceKeyEvent.html">QBackspaceKeyEvent</a></li>
+				<li><a href="class-QBlurEvent.html">QBlurEvent</a></li>
+				<li class="active"><a href="class-QCellClickEvent.html">QCellClickEvent</a></li>
+				<li><a href="class-QChangeEvent.html">QChangeEvent</a></li>
+				<li><a href="class-QClickEvent.html">QClickEvent</a></li>
+				<li><a href="class-QContextMenuEvent.html">QContextMenuEvent</a></li>
+				<li><a href="class-QDoubleClickEvent.html">QDoubleClickEvent</a></li>
+				<li><a href="class-QDownArrowKeyEvent.html">QDownArrowKeyEvent</a></li>
+				<li><a href="class-QDragDropEvent.html">QDragDropEvent</a></li>
+				<li><a href="class-QEnterKeyEvent.html">QEnterKeyEvent</a></li>
+				<li><a href="class-QEscapeKeyEvent.html">QEscapeKeyEvent</a></li>
+				<li><a href="class-QEvent.html">QEvent</a></li>
+				<li><a href="class-QFocusEvent.html">QFocusEvent</a></li>
+				<li><a href="class-QFocusInEvent.html">QFocusInEvent</a></li>
+				<li><a href="class-QFocusOutEvent.html">QFocusOutEvent</a></li>
+				<li><a href="class-QInputEvent.html">QInputEvent</a></li>
+				<li><a href="class-QJqUiEvent.html">QJqUiEvent</a></li>
+				<li><a href="class-QJqUiPropertyEvent.html">QJqUiPropertyEvent</a></li>
+				<li><a href="class-QKeyDownEvent.html">QKeyDownEvent</a></li>
+				<li><a href="class-QKeyPressEvent.html">QKeyPressEvent</a></li>
+				<li><a href="class-QKeyUpEvent.html">QKeyUpEvent</a></li>
+				<li><a href="class-QMouseDownEvent.html">QMouseDownEvent</a></li>
+				<li><a href="class-QMouseEnterEvent.html">QMouseEnterEvent</a></li>
+				<li><a href="class-QMouseLeaveEvent.html">QMouseLeaveEvent</a></li>
+				<li><a href="class-QMouseMoveEvent.html">QMouseMoveEvent</a></li>
+				<li><a href="class-QMouseOutEvent.html">QMouseOutEvent</a></li>
+				<li><a href="class-QMouseOverEvent.html">QMouseOverEvent</a></li>
+				<li><a href="class-QMouseUpEvent.html">QMouseUpEvent</a></li>
+				<li><a href="class-QOnEvent.html">QOnEvent</a></li>
+				<li><a href="class-QSelectEvent.html">QSelectEvent</a></li>
+				<li><a href="class-QTabKeyEvent.html">QTabKeyEvent</a></li>
+				<li><a href="class-QUpArrowKeyEvent.html">QUpArrowKeyEvent</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QCellClickEvent</h1>
+
+
+	<div class="description">
+	<p>Class QCellClickEvent
+An event to detect clicking on a table cell.
+Lots of things can be determined using this event by changing the JsReturnParam values. When this event fires,
+the javascript environment will have the following local variables defined:
+- this: The html object for the cell clicked.
+- event: The event object for the click.</p>
+
+<p>Here are some examples of return params you can specify to return data to your action handler: this.id - the cell id this.tagName - the tag for the cell (either th or td) this.cellIndex - the column index that was clicked on, starting on the left with column zero $j(this).data('value') - the "data-value" attribute of the cell (if you specify one). Use this formula for any kind of "data-" attribute. $j(this).parent() - the jQuery row object $j(this).parent()[0] - the html row object $j(this).parent()[0].rowIndex - the index of the row clicked, starting with zero at the top (including any header rows). $j(this).parent().attr('id') or $j(this).parent()[0].id - the id of the row clicked on $j(this).parent().data("value") - the "data-value" attribute of the row. Use this formula for any kind of "data-" attribute. $j(this).parent().closest('table').find('thead').find('th')[this.cellIndex].id - the id of the column clicked in event.target - the html object clicked in. If your table cell had other objects in it, this will return the object clicked inside the cell. This could be important, for example, if you had form objects inside the cell, and you wanted to behave differently if a form object was clicked on, verses clicking outside the form object.</p>
+
+<p>You can put your items in a javascript array, and an array will be returned as the strParameter in the action.
+Or you can put it in a javascript object, and a named array(hash) will be returned.</p>
+
+<p>The default returns the array(row=>rowIndex, col=>colIndex), but you can override this with your action. For
+example:</p>
+
+<p>new QAjaxAction ('yourFunction', null, 'this.cellIndex')</p>
+
+<p>will return the column index into the strParameter, instead of the default.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-QBaseClass.html"><span>QBaseClass</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-QEvent.html"><span>QEvent</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-QClickEvent.html"><span>QClickEvent</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>QCellClickEvent</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Events.html">Events</a><br>
+
+			<b>Located at</b> <a href="source-class-QCellClickEvent.html#374-471" title="Go to source code">includes/base_controls/_events.inc.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-QCellClickEvent.html#418-434" title="Go to source code">__construct</a>( <span>integer <var>$intDelay</var> = <span class="php-num">0</span></span>, <span>string <var>$strCondition</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$mixReturnParams</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Create an event.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create an event.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$intDelay</var></dt>
+					<dd>ms delay to wait before action is fired</dd>
+					<dt><var>$strCondition</var></dt>
+					<dd>javascript condition to check before firing the action</dd>
+					<dt><var>$mixReturnParams</var></dt>
+					<dd>$strSelector jquery selector to cause event to be attached to child items instead of this item</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception|<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QEvent.html#___construct">QEvent::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RowDataValue" id="_RowDataValue">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RowDataValue">#</a>
+		<code><a href="source-class-QCellClickEvent.html#436-443" title="Go to source code">RowDataValue</a>( <span> <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the javascript that returns the row data value into a param</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the javascript that returns the row data value into a param</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="CellDataValue" id="_CellDataValue">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_CellDataValue">#</a>
+		<code><a href="source-class-QCellClickEvent.html#445-453" title="Go to source code">CellDataValue</a>( <span> <var>$strKey</var></span> )</code>
+
+		<div class="description short">
+			<p>Same for the cell.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Same for the cell.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strKey</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer|mixed|null|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-QCellClickEvent.html#456-470" title="Go to source code">__get</a>( <span>string <var>$strName</var></span> )</code>
+
+		<div class="description short">
+			<p>The PHP Magic function for this class</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>The PHP Magic function for this class</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd>Name of the property to fetch</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer|mixed|null|string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception|<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QEvent.html#___get">QEvent::__get()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QBaseClass.html#methods">QBaseClass</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QBaseClass.html#_OverrideAttributes">OverrideAttributes()</a>, 
+			<a href="class-QBaseClass.html#___call">__call()</a>, 
+			<a href="class-QBaseClass.html#___set">__set()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="RowIndex" id="RowIndex">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-QCellClickEvent.html#409" title="Go to source code"><b>RowIndex</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#RowIndex" class="anchor">#</a>
+				<code><span class="php-quote">'$j(this).parent()[0].rowIndex'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ColumnIndex" id="ColumnIndex">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-QCellClickEvent.html#410" title="Go to source code"><b>ColumnIndex</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ColumnIndex" class="anchor">#</a>
+				<code><span class="php-quote">'this.cellIndex'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="CellId" id="CellId">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-QCellClickEvent.html#411" title="Go to source code"><b>CellId</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#CellId" class="anchor">#</a>
+				<code><span class="php-quote">'this.id'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="RowId" id="RowId">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-QCellClickEvent.html#412" title="Go to source code"><b>RowId</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#RowId" class="anchor">#</a>
+				<code><span class="php-quote">'$j(this).parent().attr(&quot;id&quot;)'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="RowValue" id="RowValue">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-QCellClickEvent.html#413" title="Go to source code"><b>RowValue</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#RowValue" class="anchor">#</a>
+				<code><span class="php-quote">'$j(this).parent().data(&quot;value&quot;)'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ColId" id="ColId">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-QCellClickEvent.html#414" title="Go to source code"><b>ColId</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ColId" class="anchor">#</a>
+				<code><span class="php-quote">'$j(this).parent().closest(&quot;table&quot;).find(&quot;thead&quot;).find(&quot;th&quot;)[this.cellIndex].id'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-QClickEvent.html#constants">QClickEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QClickEvent.html#EventName"><b>EventName</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="strReturnParam" id="$strReturnParam">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QCellClickEvent.html#416" title="Go to source code"><var>$strReturnParam</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strReturnParam" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-QEvent.html#properties">QEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QEvent.html#$intDelay"><var>$intDelay</var></a>, 
+			<a href="class-QEvent.html#$strCondition"><var>$strCondition</var></a>, 
+			<a href="class-QEvent.html#$strSelector"><var>$strSelector</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-QEvent.html#properties">QEvent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QEvent.html#m$Condition"><var>$Condition</var></a>, 
+			<a href="class-QEvent.html#m$Delay"><var>$Delay</var></a>, 
+			<a href="class-QEvent.html#m$EventName"><var>$EventName</var></a>, 
+			<a href="class-QEvent.html#m$JsReturnParam"><var>$JsReturnParam</var></a>, 
+			<a href="class-QEvent.html#m$Selector"><var>$Selector</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class QCodeGen</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-Actions.html">
+						Actions					</a>
+
+						</li>
+				<li>
+					<a href="package-Codegen.html">
+						Codegen					</a>
+
+						</li>
+				<li>
+					<a href="package-Controls.html">
+						Controls<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-Controls.Base.html">
+						Base					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-DatabaseAdapters.html">
+						DatabaseAdapters					</a>
+
+						</li>
+				<li>
+					<a href="package-Events.html">
+						Events					</a>
+
+						</li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="package-Sessions.html">
+						Sessions					</a>
+
+						</li>
+				<li>
+					<a href="package-Tests.html">
+						Tests					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-JqControlGen.html">JqControlGen</a></li>
+				<li class="active"><a href="class-QCodeGen.html">QCodeGen</a></li>
+				<li><a href="class-QCodeGenBase.html">QCodeGenBase</a></li>
+				<li><a href="class-QConvertNotation.html">QConvertNotation</a></li>
+				<li><a href="class-QConvertNotationBase.html">QConvertNotationBase</a></li>
+				<li><a href="class-QDatabaseCodeGen.html">QDatabaseCodeGen</a></li>
+				<li><a href="class-QIndex.html">QIndex</a></li>
+				<li><a href="class-QManyToManyReference.html">QManyToManyReference</a></li>
+				<li><a href="class-QReference.html">QReference</a></li>
+				<li><a href="class-QRestServiceCodeGen.html">QRestServiceCodeGen</a></li>
+				<li><a href="class-QReverseReference.html">QReverseReference</a></li>
+				<li><a href="class-QSqlColumn.html">QSqlColumn</a></li>
+				<li><a href="class-QSqlTable.html">QSqlTable</a></li>
+				<li><a href="class-QTypeTable.html">QTypeTable</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QCodeGen</h1>
+
+
+	<div class="description">
+	<p>QCodeGen</p>
+
+<p>Feel free to override any core QCodeGenBase methods here</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-QBaseClass.html"><span>QBaseClass</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-QCodeGenBase.html"><span>QCodeGenBase</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>QCodeGen</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-QDatabaseCodeGen.html">QDatabaseCodeGen</a>, 
+			<a href="class-QRestServiceCodeGen.html">QRestServiceCodeGen</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Codegen.html">Codegen</a><br>
+
+				<b>Copyright</b>
+				<br>
+				<b>Author:</b>
+				Qcubed<br>
+				<b>Version:</b>
+				2011<br>
+			<b>Located at</b> <a href="source-class-QCodeGen.html#16-70" title="Go to source code">install/project/includes/codegen/QCodeGen.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-QCodeGen.html#29-41" title="Go to source code">__construct</a>( <span> <var>$objSettingsXml</var></span> )</code>
+
+		<div class="description short">
+			<p>Construct the QCodeGen object.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Construct the QCodeGen object.</p>
+
+<p>Gives you an opportunity to read your xml file and make codegen changes accordingly.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Pluralize" id="_Pluralize">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Pluralize">#</a>
+		<code><a href="source-class-QCodeGen.html#43-69" title="Go to source code">Pluralize</a>( <span>string <var>$strName</var></span> )</code>
+
+		<div class="description short">
+			<p>QCodeGen::Pluralize()</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>QCodeGen::Pluralize()</p>
+
+<p>Example: Overriding the Pluralize method</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QCodeGenBase.html#_Pluralize">QCodeGenBase::Pluralize()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QCodeGenBase.html#methods">QCodeGenBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QCodeGenBase.html#_CalculateGraphPrefixArray">CalculateGraphPrefixArray()</a>, 
+			<a href="class-QCodeGenBase.html#_CalculateObjectDescription">CalculateObjectDescription()</a>, 
+			<a href="class-QCodeGenBase.html#_CalculateObjectDescriptionForAssociation">CalculateObjectDescriptionForAssociation()</a>, 
+			<a href="class-QCodeGenBase.html#_CalculateObjectMemberVariable">CalculateObjectMemberVariable()</a>, 
+			<a href="class-QCodeGenBase.html#_CalculateObjectPropertyName">CalculateObjectPropertyName()</a>, 
+			<a href="class-QCodeGenBase.html#_DataListControlClass">DataListControlClass()</a>, 
+			<a href="class-QCodeGenBase.html#_DataListControlName">DataListControlName()</a>, 
+			<a href="class-QCodeGenBase.html#_DataListItemName">DataListItemName()</a>, 
+			<a href="class-QCodeGenBase.html#_DataListPropertyName">DataListPropertyName()</a>, 
+			<a href="class-QCodeGenBase.html#_DataListPropertyNamePlural">DataListPropertyNamePlural()</a>, 
+			<a href="class-QCodeGenBase.html#_DataListVarName">DataListVarName()</a>, 
+			<a href="class-QCodeGenBase.html#_EvaluatePHP">EvaluatePHP()</a>, 
+			<a href="class-QCodeGenBase.html#_GenerateAggregate">GenerateAggregate()</a>, 
+			<a href="class-QCodeGenBase.html#_GenerateFile">GenerateFile()</a>, 
+			<a href="class-QCodeGenBase.html#_GenerateFiles">GenerateFiles()</a>, 
+			<a href="class-QCodeGenBase.html#_GetControlCodeGenerator">GetControlCodeGenerator()</a>, 
+			<a href="class-QCodeGenBase.html#_GetDataListCodeGenerator">GetDataListCodeGenerator()</a>, 
+			<a href="class-QCodeGenBase.html#_GetSettingsXml">GetSettingsXml()</a>, 
+			<a href="class-QCodeGenBase.html#_ImplodeObjectArray">ImplodeObjectArray()</a>, 
+			<a href="class-QCodeGenBase.html#_LookupSetting">LookupSetting()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelClassName">ModelClassName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelColumnPropertyName">ModelColumnPropertyName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelColumnVariableName">ModelColumnVariableName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelConnectorControlClass">ModelConnectorControlClass()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelConnectorControlName">ModelConnectorControlName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelConnectorLabelVariableName">ModelConnectorLabelVariableName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelConnectorPropertyName">ModelConnectorPropertyName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelConnectorVariableName">ModelConnectorVariableName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelReferenceColumnName">ModelReferenceColumnName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelReferencePropertyName">ModelReferencePropertyName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelReferenceVariableName">ModelReferenceVariableName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelReverseReferenceVariableName">ModelReverseReferenceVariableName()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelReverseReferenceVariableType">ModelReverseReferenceVariableType()</a>, 
+			<a href="class-QCodeGenBase.html#_ModelVariableName">ModelVariableName()</a>, 
+			<a href="class-QCodeGenBase.html#_ParameterCleanupFromColumn">ParameterCleanupFromColumn()</a>, 
+			<a href="class-QCodeGenBase.html#_ParameterListFromColumnArray">ParameterListFromColumnArray()</a>, 
+			<a href="class-QCodeGenBase.html#_ReportError">ReportError()</a>, 
+			<a href="class-QCodeGenBase.html#_Run">Run()</a>, 
+			<a href="class-QCodeGenBase.html#_TypeColumnPropertyName">TypeColumnPropertyName()</a>, 
+			<a href="class-QCodeGenBase.html#_TypeTokenFromTypeName">TypeTokenFromTypeName()</a>, 
+			<a href="class-QCodeGenBase.html#_VariableTypeFromDbType">VariableTypeFromDbType()</a>, 
+			<a href="class-QCodeGenBase.html#___get">__get()</a>, 
+			<a href="class-QCodeGenBase.html#___set">__set()</a>, 
+			<a href="class-QCodeGenBase.html#_buildTemplateArray">buildTemplateArray()</a>, 
+			<a href="class-QCodeGenBase.html#_getTemplateSettings"><span class="deprecated">getTemplateSettings()</span></a>, 
+			<a href="class-QCodeGenBase.html#_setGeneratedFilePermissions">setGeneratedFilePermissions()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QBaseClass.html#methods">QBaseClass</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QBaseClass.html#_OverrideAttributes">OverrideAttributes()</a>, 
+			<a href="class-QBaseClass.html#___call">__call()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-QCodeGenBase.html#constants">QCodeGenBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QCodeGenBase.html#DebugMode"><b>DebugMode</b></a>, 
+			<a href="class-QCodeGenBase.html#PhpReservedWords"><b>PhpReservedWords</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-QCodeGenBase.html#properties">QCodeGenBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QCodeGenBase.html#$ApplicationName"><var>$ApplicationName</var></a>, 
+			<a href="class-QCodeGenBase.html#$CodeGenArray"><var>$CodeGenArray</var></a>, 
+			<a href="class-QCodeGenBase.html#$CreateMethod"><var>$CreateMethod</var></a>, 
+			<a href="class-QCodeGenBase.html#$DefaultButtonClass"><var>$DefaultButtonClass</var></a>, 
+			<a href="class-QCodeGenBase.html#$DirectoriesToExcludeArray"><var>$DirectoriesToExcludeArray</var></a>, 
+			<a href="class-QCodeGenBase.html#$PreferredRenderMethod"><var>$PreferredRenderMethod</var></a>, 
+			<a href="class-QCodeGenBase.html#$RootErrors"><var>$RootErrors</var></a>, 
+			<a href="class-QCodeGenBase.html#$SettingsFilePath"><var>$SettingsFilePath</var></a>, 
+			<a href="class-QCodeGenBase.html#$SettingsXml"><var>$SettingsXml</var></a>, 
+			<a href="class-QCodeGenBase.html#$SettingsXmlArray"><var>$SettingsXmlArray</var></a>, 
+			<a href="class-QCodeGenBase.html#$TemplateEscapeBegin"><var>$TemplateEscapeBegin</var></a>, 
+			<a href="class-QCodeGenBase.html#$TemplateEscapeBeginLength"><var>$TemplateEscapeBeginLength</var></a>, 
+			<a href="class-QCodeGenBase.html#$TemplateEscapeEnd"><var>$TemplateEscapeEnd</var></a>, 
+			<a href="class-QCodeGenBase.html#$TemplateEscapeEndLength"><var>$TemplateEscapeEndLength</var></a>, 
+			<a href="class-QCodeGenBase.html#$TemplatePaths"><var>$TemplatePaths</var></a>, 
+			<a href="class-QCodeGenBase.html#$strClassPrefix"><var>$strClassPrefix</var></a>, 
+			<a href="class-QCodeGenBase.html#$strClassSuffix"><var>$strClassSuffix</var></a>, 
+			<a href="class-QCodeGenBase.html#$strErrors"><var>$strErrors</var></a>, 
+			<a href="class-QCodeGenBase.html#$strWarnings"><var>$strWarnings</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-QCodeGenBase.html#properties">QCodeGenBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QCodeGenBase.html#m$Errors"><var>$Errors</var></a>, 
+			<a href="class-QCodeGenBase.html#m$Warnings"><var>$Warnings</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class QDatabaseBase</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-Actions.html">
+						Actions					</a>
+
+						</li>
+				<li>
+					<a href="package-Codegen.html">
+						Codegen					</a>
+
+						</li>
+				<li>
+					<a href="package-Controls.html">
+						Controls<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-Controls.Base.html">
+						Base					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-DatabaseAdapters.html">
+						DatabaseAdapters					</a>
+
+						</li>
+				<li>
+					<a href="package-Events.html">
+						Events					</a>
+
+						</li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="package-Sessions.html">
+						Sessions					</a>
+
+						</li>
+				<li>
+					<a href="package-Tests.html">
+						Tests					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-QDatabaseBase.html">QDatabaseBase</a></li>
+				<li><a href="class-QDatabaseFieldType.html">QDatabaseFieldType</a></li>
+				<li><a href="class-QDatabaseForeignKey.html">QDatabaseForeignKey</a></li>
+				<li><a href="class-QDatabaseIndex.html">QDatabaseIndex</a></li>
+				<li><a href="class-QDatabaseRowBase.html">QDatabaseRowBase</a></li>
+				<li><a href="class-QInformixPdoDatabase.html">QInformixPdoDatabase</a></li>
+				<li><a href="class-QMySqlDatabase.html">QMySqlDatabase</a></li>
+				<li><a href="class-QMySqlDatabaseField.html">QMySqlDatabaseField</a></li>
+				<li><a href="class-QMySqli5ClusterDatabase.html">QMySqli5ClusterDatabase</a></li>
+				<li><a href="class-QMySqli5Database.html">QMySqli5Database</a></li>
+				<li><a href="class-QMySqli5DatabaseField.html">QMySqli5DatabaseField</a></li>
+				<li><a href="class-QMySqli5DatabaseResult.html">QMySqli5DatabaseResult</a></li>
+				<li><a href="class-QMySqliDatabase.html">QMySqliDatabase</a></li>
+				<li><a href="class-QMySqliDatabaseField.html">QMySqliDatabaseField</a></li>
+				<li><a href="class-QMySqliDatabaseResult.html">QMySqliDatabaseResult</a></li>
+				<li><a href="class-QMySqliDatabaseRow.html">QMySqliDatabaseRow</a></li>
+				<li><a href="class-QOracleDatabase.html">QOracleDatabase</a></li>
+				<li><a href="class-QOracleDatabaseRow.html">QOracleDatabaseRow</a></li>
+				<li><a href="class-QPdoDatabase.html">QPdoDatabase</a></li>
+				<li><a href="class-QPostgreSqlDatabase.html">QPostgreSqlDatabase</a></li>
+				<li><a href="class-QPostgreSqlDatabaseField.html">QPostgreSqlDatabaseField</a></li>
+				<li><a href="class-QPostgreSqlDatabaseResult.html">QPostgreSqlDatabaseResult</a></li>
+				<li><a href="class-QPostgreSqlDatabaseRow.html">QPostgreSqlDatabaseRow</a></li>
+				<li><a href="class-QPostgreSqlPdoDatabase.html">QPostgreSqlPdoDatabase</a></li>
+				<li><a href="class-QSqLite3PdoDatabase.html">QSqLite3PdoDatabase</a></li>
+				<li><a href="class-QSqlServer2005Database.html">QSqlServer2005Database</a></li>
+				<li><a href="class-QSqlServer2005DatabaseField.html">QSqlServer2005DatabaseField</a></li>
+				<li><a href="class-QSqlServer2005DatabaseResult.html">QSqlServer2005DatabaseResult</a></li>
+				<li><a href="class-QSqlServer2005DatabaseRow.html">QSqlServer2005DatabaseRow</a></li>
+				<li><a href="class-QSqlServerDatabase.html">QSqlServerDatabase</a></li>
+				<li><a href="class-QSqlServerDatabaseField.html">QSqlServerDatabaseField</a></li>
+				<li><a href="class-QSqlServerDatabaseResult.html">QSqlServerDatabaseResult</a></li>
+				<li><a href="class-QSqlServerDatabaseRow.html">QSqlServerDatabaseRow</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-QDatabaseExceptionBase.html">QDatabaseExceptionBase</a></li>
+				<li><a href="class-QMySqliDatabaseException.html">QMySqliDatabaseException</a></li>
+				<li><a href="class-QOracleDatabaseException.html">QOracleDatabaseException</a></li>
+				<li><a href="class-QPostgreSqlDatabaseException.html">QPostgreSqlDatabaseException</a></li>
+				<li><a href="class-QSqlServer2005DatabaseException.html">QSqlServer2005DatabaseException</a></li>
+				<li><a href="class-QSqlServerDatabaseException.html">QSqlServerDatabaseException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QDatabaseBase</h1>
+
+
+	<div class="description">
+	<p>Every database adapter must implement the following 5 classes (all of which are abstract):
+* DatabaseBase
+* DatabaseFieldBase
+* DatabaseResultBase
+* DatabaseRowBase
+* DatabaseExceptionBase
+This Database library also has the following classes already defined, and
+Database adapters are assumed to use them internally:
+* DatabaseIndex
+* DatabaseForeignKey
+* DatabaseFieldType (which is an abstract class that solely contains constants)</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-QBaseClass.html"><span>QBaseClass</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>QDatabaseBase</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-QMySqliDatabase.html">QMySqliDatabase</a>, 
+			<a href="class-QOracleDatabase.html">QOracleDatabase</a>, 
+			<a href="class-QPdoDatabase.html">QPdoDatabase</a>, 
+			<a href="class-QPostgreSqlDatabase.html">QPostgreSqlDatabase</a>, 
+			<a href="class-QSqlServer2005Database.html">QSqlServer2005Database</a>, 
+			<a href="class-QSqlServerDatabase.html">QSqlServerDatabase</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-QInformixPdoDatabase.html">QInformixPdoDatabase</a>, 
+			<a href="class-QMySqlDatabase.html">QMySqlDatabase</a>, 
+			<a href="class-QMySqli5ClusterDatabase.html">QMySqli5ClusterDatabase</a>, 
+			<a href="class-QMySqli5Database.html">QMySqli5Database</a>, 
+			<a href="class-QPostgreSqlPdoDatabase.html">QPostgreSqlPdoDatabase</a>, 
+			<a href="class-QSqLite3PdoDatabase.html">QSqLite3PdoDatabase</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		
+		<b>Package:</b> <a href="package-DatabaseAdapters.html">DatabaseAdapters</a><br>
+
+			<b>Located at</b> <a href="source-class-QDatabaseBase.html#173-967" title="Go to source code">includes/framework/QDatabaseBase.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="Connect" id="_Connect">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Connect">#</a>
+		<code><a href="source-class-QDatabaseBase.html#245-248" title="Go to source code">Connect</a>( )</code>
+
+		<div class="description short">
+			<p>Connects to the database</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Connects to the database</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteQuery" id="_ExecuteQuery">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteQuery">#</a>
+		<code><a href="source-class-QDatabaseBase.html#250-258" title="Go to source code">ExecuteQuery</a>( <span>string <var>$strQuery</var></span> )</code>
+
+		<div class="description short">
+			<p>Sends a SQL query for execution to the database
+In this regard, a query is a 'SELECT' statement</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sends a SQL query for execution to the database
+In this regard, a query is a 'SELECT' statement</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strQuery</var></dt>
+					<dd>The Query to be executed</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>Result that the database returns after running the query.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteNonQuery" id="_ExecuteNonQuery">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteNonQuery">#</a>
+		<code><a href="source-class-QDatabaseBase.html#260-271" title="Go to source code">ExecuteNonQuery</a>( <span>string <var>$strNonQuery</var></span> )</code>
+
+		<div class="description short">
+			<p>Sends a non-SELECT query (such as INSERT, UPDATE, DELETE, TRUNCATE) to DB server.
+In most cases, the results of this function are not used and you should not send
+'SELECT' queries using this method because a result is not guaranteed to be returned</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sends a non-SELECT query (such as INSERT, UPDATE, DELETE, TRUNCATE) to DB server.
+In most cases, the results of this function are not used and you should not send
+'SELECT' queries using this method because a result is not guaranteed to be returned</p>
+
+<p>If there was an error, it would most probably be caught as an exception.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strNonQuery</var></dt>
+					<dd>The Query to be executed</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>Result that the database returns after running the query
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetTables" id="_GetTables">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			mixed|string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetTables">#</a>
+		<code><a href="source-class-QDatabaseBase.html#273-278" title="Go to source code">GetTables</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the list of tables in the database (as string)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the list of tables in the database (as string)</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed|string[]<br>List of tables
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="InsertId" id="_InsertId">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_InsertId">#</a>
+		<code><a href="source-class-QDatabaseBase.html#280-288" title="Go to source code">InsertId</a>( <span>null|string <var>$strTableName</var> = <span class="php-keyword1">null</span></span>, <span>null|string <var>$strColumnName</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns the ID to be inserted in a table column (normally it an autoincrement column)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the ID to be inserted in a table column (normally it an autoincrement column)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strTableName</var></dt>
+					<dd>Table name where the ID has to be inserted</dd>
+					<dt><var>$strColumnName</var></dt>
+					<dd>Column name where the ID has to be inserted</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetFieldsForTable" id="_GetFieldsForTable">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetFieldsForTable">#</a>
+		<code><a href="source-class-QDatabaseBase.html#290-297" title="Go to source code">GetFieldsForTable</a>( <span>string <var>$strTableName</var></span> )</code>
+
+		<div class="description short">
+			<p>Get the list of columns/fields for a given table</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the list of columns/fields for a given table</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strTableName</var></dt>
+					<dd>Name of table whose fields we have to get</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetIndexesForTable" id="_GetIndexesForTable">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetIndexesForTable">#</a>
+		<code><a href="source-class-QDatabaseBase.html#299-306" title="Go to source code">GetIndexesForTable</a>( <span>string <var>$strTableName</var></span> )</code>
+
+		<div class="description short">
+			<p>Get list of indexes for a table</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get list of indexes for a table</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strTableName</var></dt>
+					<dd>Name of table whose column indexes we have to get</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetForeignKeysForTable" id="_GetForeignKeysForTable">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetForeignKeysForTable">#</a>
+		<code><a href="source-class-QDatabaseBase.html#308-315" title="Go to source code">GetForeignKeysForTable</a>( <span>string <var>$strTableName</var></span> )</code>
+
+		<div class="description short">
+			<p>Get list of foreign keys for a table</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get list of foreign keys for a table</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strTableName</var></dt>
+					<dd>Name of table whose foreign keys we are trying to get</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteTransactionBegin" id="_ExecuteTransactionBegin">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteTransactionBegin">#</a>
+		<code><a href="source-class-QDatabaseBase.html#317-324" title="Go to source code">ExecuteTransactionBegin</a>( )</code>
+
+		<div class="description short">
+			<p>This function actually begins the database transaction.
+Must be implemented in all subclasses.
+The "TransactionBegin" wrapper are meant to be called by end-user code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function actually begins the database transaction.
+Must be implemented in all subclasses.
+The "TransactionBegin" wrapper are meant to be called by end-user code</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteTransactionCommit" id="_ExecuteTransactionCommit">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteTransactionCommit">#</a>
+		<code><a href="source-class-QDatabaseBase.html#326-332" title="Go to source code">ExecuteTransactionCommit</a>( )</code>
+
+		<div class="description short">
+			<p>This function actually commits the database transaction.
+Must be implemented in all subclasses.
+The "TransactionCommit" wrapper are meant to be called by end-user code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function actually commits the database transaction.
+Must be implemented in all subclasses.
+The "TransactionCommit" wrapper are meant to be called by end-user code</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteTransactionRollBack" id="_ExecuteTransactionRollBack">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteTransactionRollBack">#</a>
+		<code><a href="source-class-QDatabaseBase.html#334-341" title="Go to source code">ExecuteTransactionRollBack</a>( )</code>
+
+		<div class="description short">
+			<p>This function actually rolls back the database transaction.
+Must be implemented in all subclasses.
+The "TransactionRollBack" wrapper are meant to be called by end-user code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function actually rolls back the database transaction.
+Must be implemented in all subclasses.
+The "TransactionRollBack" wrapper are meant to be called by end-user code</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExecuteProcedure" id="_ExecuteProcedure">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExecuteProcedure">#</a>
+		<code><a href="source-class-QDatabaseBase.html#343-349" title="Go to source code">ExecuteProcedure</a>( <span> <var>$strProcName</var></span>, <span>null <var>$params</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Template for executing stored procedures. Optional, for those database drivers that support it.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Template for executing stored procedures. Optional, for those database drivers that support it.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strProcName</var></dt>
+					<dd></dd>
+					<dt><var>$params</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="TransactionBegin" id="_TransactionBegin">
+
+		<td class="attributes"><code>
+			final public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_TransactionBegin">#</a>
+		<code><a href="source-class-QDatabaseBase.html#351-369" title="Go to source code">TransactionBegin</a>( )</code>
+
+		<div class="description short">
+			<p>This function begins the database transaction.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function begins the database transaction.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="TransactionCommit" id="_TransactionCommit">
+
+		<td class="attributes"><code>
+			final public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_TransactionCommit">#</a>
+		<code><a href="source-class-QDatabaseBase.html#371-387" title="Go to source code">TransactionCommit</a>( )</code>
+
+		<div class="description short">
+			<p>This function commits the database transaction.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function commits the database transaction.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="TransactionRollBack" id="_TransactionRollBack">
+
+		<td class="attributes"><code>
+			final public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_TransactionRollBack">#</a>
+		<code><a href="source-class-QDatabaseBase.html#389-398" title="Go to source code">TransactionRollBack</a>( )</code>
+
+		<div class="description short">
+			<p>This function rolls back the database transaction.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This function rolls back the database transaction.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>Nothing
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="transactionCacheFlush" id="_transactionCacheFlush">
+
+		<td class="attributes"><code>
+			final protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_transactionCacheFlush">#</a>
+		<code><a href="source-class-QDatabaseBase.html#400-409" title="Go to source code">transactionCacheFlush</a>( )</code>
+
+		<div class="description short">
+			<p>Flushes all objects from the local cache to the actual one.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Flushes all objects from the local cache to the actual one.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="transactionCacheRestore" id="_transactionCacheRestore">
+
+		<td class="attributes"><code>
+			final protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_transactionCacheRestore">#</a>
+		<code><a href="source-class-QDatabaseBase.html#411-421" title="Go to source code">transactionCacheRestore</a>( )</code>
+
+		<div class="description short">
+			<p>Restores the actual cache to the QApplication variable.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Restores the actual cache to the QApplication variable.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SqlLimitVariablePrefix" id="_SqlLimitVariablePrefix">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SqlLimitVariablePrefix">#</a>
+		<code><a href="source-class-QDatabaseBase.html#423" title="Go to source code">SqlLimitVariablePrefix</a>( <span> <var>$strLimitInfo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SqlLimitVariableSuffix" id="_SqlLimitVariableSuffix">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SqlLimitVariableSuffix">#</a>
+		<code><a href="source-class-QDatabaseBase.html#424" title="Go to source code">SqlLimitVariableSuffix</a>( <span> <var>$strLimitInfo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SqlSortByVariable" id="_SqlSortByVariable">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SqlSortByVariable">#</a>
+		<code><a href="source-class-QDatabaseBase.html#425" title="Go to source code">SqlSortByVariable</a>( <span> <var>$strSortByInfo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Close" id="_Close">
+
+		<td class="attributes"><code>
+			abstract public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Close">#</a>
+		<code><a href="source-class-QDatabaseBase.html#427-432" title="Go to source code">Close</a>( )</code>
+
+		<div class="description short">
+			<p>Closes the database connection</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Closes the database connection</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeIdentifier" id="_EscapeIdentifier">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeIdentifier">#</a>
+		<code><a href="source-class-QDatabaseBase.html#434-443" title="Go to source code">EscapeIdentifier</a>( <span>string <var>$strIdentifier</var></span> )</code>
+
+		<div class="description short">
+			<p>Given an identifier for a SQL query, this method returns the escaped identifier</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Given an identifier for a SQL query, this method returns the escaped identifier</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strIdentifier</var></dt>
+					<dd>Identifier to be escaped</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>Escaped identifier string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeIdentifiers" id="_EscapeIdentifiers">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeIdentifiers">#</a>
+		<code><a href="source-class-QDatabaseBase.html#445-459" title="Go to source code">EscapeIdentifiers</a>( <span>array|string <var>$mixIdentifiers</var></span> )</code>
+
+		<div class="description short">
+			<p>Given an array of identifiers, this method returns array of escaped identifiers
+For corner case handling, if a single identifier is supplied, a single escaped identifier is returned</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Given an array of identifiers, this method returns array of escaped identifiers
+For corner case handling, if a single identifier is supplied, a single escaped identifier is returned</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixIdentifiers</var></dt>
+					<dd>Array of escaped identifiers (array) or one unescaped identifier (string)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array|string<br>Array of escaped identifiers (array) or one escaped identifier (string)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeValues" id="_EscapeValues">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeValues">#</a>
+		<code><a href="source-class-QDatabaseBase.html#461-474" title="Go to source code">EscapeValues</a>( <span>array|mixed <var>$mixValues</var></span> )</code>
+
+		<div class="description short">
+			<p>Escapes values (or single value) which we can then send to the database</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escapes values (or single value) which we can then send to the database</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixValues</var></dt>
+					<dd>Array of values (or a single value) to be escaped</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array|string<br>Array of (or a single) escaped value(s)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EscapeIdentifiersAndValues" id="_EscapeIdentifiersAndValues">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EscapeIdentifiersAndValues">#</a>
+		<code><a href="source-class-QDatabaseBase.html#476-489" title="Go to source code">EscapeIdentifiersAndValues</a>( <span>array <var>$mixColumnsAndValuesArray</var></span> )</code>
+
+		<div class="description short">
+			<p>Escapes both column and values when supplied as an array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Escapes both column and values when supplied as an array</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixColumnsAndValuesArray</var></dt>
+					<dd>Array with column=>value format with both (column and value) sides unescaped</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Array with column=>value format data with both column and value escaped
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="InsertOrUpdate" id="_InsertOrUpdate">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_InsertOrUpdate">#</a>
+		<code><a href="source-class-QDatabaseBase.html#491-526" title="Go to source code">InsertOrUpdate</a>( <span>string <var>$strTable</var></span>, <span>array <var>$mixColumnsAndValuesArray</var></span>, <span>null|string|array <var>$strPKNames</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>INSERTs or UPDATEs a table</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>INSERTs or UPDATEs a table</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strTable</var></dt>
+					<dd>Table name</dd>
+					<dt><var>$mixColumnsAndValuesArray</var></dt>
+					<dd><p>column=>value array
+                                                   (they are given to 'EscapeIdentifiersAndValues' method)</p></dd>
+					<dt><var>$strPKNames</var></dt>
+					<dd>Name(s) of primary key column(s) (expressed as string or array)</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="Query" id="_Query">
+
+		<td class="attributes"><code>
+			final public 
+
+			<code><a href="class-QDatabaseResultBase.html">QDatabaseResultBase</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Query">#</a>
+		<code><a href="source-class-QDatabaseBase.html#528-558" title="Go to source code">Query</a>( <span>string <var>$strQuery</var></span> )</code>
+
+		<div class="description short">
+			<p>Sends the 'SELECT' query to the database and returns the result</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sends the 'SELECT' query to the database and returns the result</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strQuery</var></dt>
+					<dd>query string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-QDatabaseResultBase.html">QDatabaseResultBase</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="NonQuery" id="_NonQuery">
+
+		<td class="attributes"><code>
+			final public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_NonQuery">#</a>
+		<code><a href="source-class-QDatabaseBase.html#560-588" title="Go to source code">NonQuery</a>( <span>string <var>$strNonQuery</var></span> )</code>
+
+		<div class="description short">
+			<p>This is basically the same as 'Query' but is used when SQL statements other than 'SELECT'</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This is basically the same as 'Query' but is used when SQL statements other than 'SELECT'</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strNonQuery</var></dt>
+					<dd>The SQL to be sent</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-QDatabaseBase.html#590-639" title="Go to source code">__get</a>( <span>string <var>$strName</var></span> )</code>
+
+		<div class="description short">
+			<p>PHP magic method</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>PHP magic method</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd>Property name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception|<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QBaseClass.html#___get">QBaseClass::__get()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed|
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-QDatabaseBase.html#641-663" title="Go to source code">__set</a>( <span>string <var>$strName</var></span>, <span>string <var>$mixValue</var></span> )</code>
+
+		<div class="description short">
+			<p>PHP magic method to set class properties</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>PHP magic method to set class properties</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strName</var></dt>
+					<dd>Property name</dd>
+					<dt><var>$mixValue</var></dt>
+					<dd>Property value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed|
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception|<code><a href="class-QCallerException.html">QCallerException</a></code>
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-QBaseClass.html#___set">QBaseClass::__set()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-QDatabaseBase.html">QDatabaseBase</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-QDatabaseBase.html#665-688" title="Go to source code">__construct</a>( <span>integer <var>$intDatabaseIndex</var></span>, <span>string[] <var>$objConfigArray</var></span> )</code>
+
+		<div class="description short">
+			<p>Constructs a Database Adapter based on the database index and the configuration array of properties
+for this particular adapter. Sets up the base-level configuration properties for this database,
+namely DB Profiling and Database Index</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructs a Database Adapter based on the database index and the configuration array of properties
+for this particular adapter. Sets up the base-level configuration properties for this database,
+namely DB Profiling and Database Index</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$intDatabaseIndex</var></dt>
+					<dd></dd>
+					<dt><var>$objConfigArray</var></dt>
+					<dd><p>configuration array as passed in to the constructor
+                                by QApplicationBase::InitializeDatabaseConnections();</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-QDatabaseBase.html">QDatabaseBase</a></code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception|<code><a href="class-QCallerException.html">QCallerException</a></code>|<code><a href="class-QInvalidCastException.html">QInvalidCastException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EnableProfiling" id="_EnableProfiling">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EnableProfiling">#</a>
+		<code><a href="source-class-QDatabaseBase.html#690-701" title="Go to source code">EnableProfiling</a>( )</code>
+
+		<div class="description short">
+			<p>Allows for the enabling of DB profiling while in middle of the script</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Allows for the enabling of DB profiling while in middle of the script</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SqlVariable" id="_SqlVariable">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SqlVariable">#</a>
+		<code><a href="source-class-QDatabaseBase.html#761-859" title="Go to source code">SqlVariable</a>( <span>mixed <var>$mixData</var></span>, <span>boolean <var>$blnIncludeEquality</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$blnReverseEquality</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Properly escapes $mixData to be used as a SQL query parameter.
+If IncludeEquality is set (usually not), then include an equality operator.
+So for most data, it would just be "=".  But, for example,
+if $mixData is NULL, then most RDBMS's require the use of "IS".</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Properly escapes $mixData to be used as a SQL query parameter.
+If IncludeEquality is set (usually not), then include an equality operator.
+So for most data, it would just be "=".  But, for example,
+if $mixData is NULL, then most RDBMS's require the use of "IS".</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mixData</var></dt>
+					<dd></dd>
+					<dt><var>$blnIncludeEquality</var></dt>
+					<dd>whether or not to include an equality operator</dd>
+					<dt><var>$blnReverseEquality</var></dt>
+					<dd>whether the included equality operator should be a "NOT EQUAL", e.g. "!="</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>the properly formatted SQL variable
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="PrepareStatement" id="_PrepareStatement">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_PrepareStatement">#</a>
+		<code><a href="source-class-QDatabaseBase.html#861-876" title="Go to source code">PrepareStatement</a>( <span> <var>$strQuery</var></span>, <span> <var>$mixParameterArray</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="OutputProfiling" id="_OutputProfiling">
+
+		<td class="attributes"><code>
+			 public 
+
+			null|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_OutputProfiling">#</a>
+		<code><a href="source-class-QDatabaseBase.html#878-919" title="Go to source code">OutputProfiling</a>( <span>boolean <var>$blnPrintOutput</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Displays the OutputProfiling results, plus a link which will popup the details of the profiling.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Displays the OutputProfiling results, plus a link which will popup the details of the profiling.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$blnPrintOutput</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					null|string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExplainStatement" id="_ExplainStatement">
+
+		<td class="attributes"><code>
+			 public 
+
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExplainStatement">#</a>
+		<code><a href="source-class-QDatabaseBase.html#921-931" title="Go to source code">ExplainStatement</a>( <span> <var>$strSql</var></span> )</code>
+
+		<div class="description short">
+			<p>Executes the explain statement for a given query and returns the output without any transformation.
+If the database adapter does not support EXPLAIN statements, returns null.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Executes the explain statement for a given query and returns the output without any transformation.
+If the database adapter does not support EXPLAIN statements, returns null.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strSql</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ExtractCommentOptions" id="_ExtractCommentOptions">
+
+		<td class="attributes"><code>
+			 public static
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ExtractCommentOptions">#</a>
+		<code><a href="source-class-QDatabaseBase.html#934-965" title="Go to source code">ExtractCommentOptions</a>( <span>string <var>$strComment</var></span> )</code>
+
+		<div class="description short">
+			<p>Utility function to extract the json embedded options structure from the comments.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Utility function to extract the json embedded options structure from the comments.</p>
+
+<p>Usage:</p>
+
+<pre><span class="php-keyword1">list</span>(<span class="php-var">$strComment</span>, <span class="php-var">$options</span>) = QDatabaseFieldBase::ExtractCommentOptions(<span class="php-var">$strComment</span>);</pre>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$strComment</var></dt>
+					<dd>The comment to analyze</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>A two item array, with first item the comment with the options removed, and 2nd item the options array.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QBaseClass.html#methods">QBaseClass</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QBaseClass.html#_OverrideAttributes">OverrideAttributes()</a>, 
+			<a href="class-QBaseClass.html#___call">__call()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="Adapter" id="Adapter">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-QDatabaseBase.html#210-211" title="Go to source code"><b>Adapter</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Adapter name</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Adapter name</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#Adapter" class="anchor">#</a>
+				<code><span class="php-quote">'Generic Database Adapter (Abstract)'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="intDatabaseIndex" id="$intDatabaseIndex">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#214-215" title="Go to source code"><var>$intDatabaseIndex</var></a>
+
+			<div class="description short">
+				<p>Database Index according to the configuration file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Database Index according to the configuration file</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$intDatabaseIndex" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="blnEnableProfiling" id="$blnEnableProfiling">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#216-217" title="Go to source code"><var>$blnEnableProfiling</var></a>
+
+			<div class="description short">
+				<p>Has the profiling been enabled?</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Has the profiling been enabled?</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$blnEnableProfiling" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strProfileArray" id="$strProfileArray">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#218" title="Go to source code"><var>$strProfileArray</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strProfileArray" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objConfigArray" id="$objConfigArray">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#220" title="Go to source code"><var>$objConfigArray</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objConfigArray" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="blnConnectedFlag" id="$blnConnectedFlag">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#221" title="Go to source code"><var>$blnConnectedFlag</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$blnConnectedFlag" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strEscapeIdentifierBegin" id="$strEscapeIdentifierBegin">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#223-224" title="Go to source code"><var>$strEscapeIdentifierBegin</var></a>
+
+			<div class="description short">
+				<p>The beginning part of characters which can escape identifiers in a SQL query for the database</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The beginning part of characters which can escape identifiers in a SQL query for the database</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strEscapeIdentifierBegin" class="anchor">#</a>
+				<code><span class="php-quote">'&quot;'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strEscapeIdentifierEnd" id="$strEscapeIdentifierEnd">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#225-226" title="Go to source code"><var>$strEscapeIdentifierEnd</var></a>
+
+			<div class="description short">
+				<p>The ending part of characters which can escape identifiers in a SQL query for the database</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The ending part of characters which can escape identifiers in a SQL query for the database</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strEscapeIdentifierEnd" class="anchor">#</a>
+				<code><span class="php-quote">'&quot;'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="blnOnlyFullGroupBy" id="$blnOnlyFullGroupBy">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#227" title="Go to source code"><var>$blnOnlyFullGroupBy</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$blnOnlyFullGroupBy" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="intTransactionDepth" id="$intTransactionDepth">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#229-235" title="Go to source code"><var>$intTransactionDepth</var></a>
+
+			<div class="description short">
+				<p>The transaction depth value.
+It is incremented on a transaction begin,
+decremented on a transaction commit, and reset to zero on a roll back.
+It is used to implement the recursive transaction functionality.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The transaction depth value.
+It is incremented on a transaction begin,
+decremented on a transaction commit, and reset to zero on a roll back.
+It is used to implement the recursive transaction functionality.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$intTransactionDepth" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="objCacheProviderStack" id="$objCacheProviderStack">
+		<td class="attributes"><code>
+			protected static 
+			<code><a href="class-QStack.html">QStack</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#237-242" title="Go to source code"><var>$objCacheProviderStack</var></a>
+
+			<div class="description short">
+				<p>The stack of cache providers.
+It is populated with cache providers from different databases,
+if there are transaction of one DB in the middle of the transaction of another DB.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The stack of cache providers.
+It is populated with cache providers from different databases,
+if there are transaction of one DB in the middle of the transaction of another DB.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$objCacheProviderStack" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary properties" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="Caching" id="m$Caching">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#201" title="Go to source code"><var>$Caching</var></a>
+
+			<div class="description short">
+				<p>if true objects loaded from this database will be kept in cache (assuming a cache provider is also configured)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="EscapeIdentifierBegin" id="m$EscapeIdentifierBegin">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#186" title="Go to source code"><var>$EscapeIdentifierBegin</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="EscapeIdentifierEnd" id="m$EscapeIdentifierEnd">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#187" title="Go to source code"><var>$EscapeIdentifierEnd</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="EnableProfiling" id="m$EnableProfiling">
+		<td class="attributes"><code>
+			public  read-only
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#188" title="Go to source code"><var>$EnableProfiling</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="AffectedRows" id="m$AffectedRows">
+		<td class="attributes"><code>
+			public  read-only
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#189" title="Go to source code"><var>$AffectedRows</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Profile" id="m$Profile">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#190" title="Go to source code"><var>$Profile</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DatabaseIndex" id="m$DatabaseIndex">
+		<td class="attributes"><code>
+			public  read-only
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#191" title="Go to source code"><var>$DatabaseIndex</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Adapter" id="m$Adapter">
+		<td class="attributes"><code>
+			public  read-only
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#192" title="Go to source code"><var>$Adapter</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Server" id="m$Server">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#193" title="Go to source code"><var>$Server</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Port" id="m$Port">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#194" title="Go to source code"><var>$Port</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Database" id="m$Database">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#195" title="Go to source code"><var>$Database</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Service" id="m$Service">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#196" title="Go to source code"><var>$Service</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Protocol" id="m$Protocol">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#197" title="Go to source code"><var>$Protocol</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Host" id="m$Host">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#198" title="Go to source code"><var>$Host</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Username" id="m$Username">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#199" title="Go to source code"><var>$Username</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Password" id="m$Password">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#200" title="Go to source code"><var>$Password</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DateFormat" id="m$DateFormat">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#202" title="Go to source code"><var>$DateFormat</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	<tr data-order="OnlyFullGroupBy" id="m$OnlyFullGroupBy">
+		<td class="attributes"><code>
+			public  read-only
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDatabaseBase.html#203-205" title="Go to source code"><var>$OnlyFullGroupBy</var></a>
+
+			<div class="description short">
+				<p>database adapter sub-classes can override and set this property to true          to prevent the behavior of automatically adding all the columns to the select clause when the query has          an aggregation clause.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
