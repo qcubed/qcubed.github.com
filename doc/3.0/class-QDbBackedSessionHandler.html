@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class QDbBackedSessionHandler</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-Actions.html">
+						Actions					</a>
+
+						</li>
+				<li>
+					<a href="package-Codegen.html">
+						Codegen					</a>
+
+						</li>
+				<li>
+					<a href="package-Controls.html">
+						Controls<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-Controls.Base.html">
+						Base					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-DatabaseAdapters.html">
+						DatabaseAdapters					</a>
+
+						</li>
+				<li>
+					<a href="package-Events.html">
+						Events					</a>
+
+						</li>
+				<li>
+					<a href="package-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="package-Sessions.html">
+						Sessions					</a>
+
+						</li>
+				<li>
+					<a href="package-Tests.html">
+						Tests					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-QDbBackedSessionHandler.html">QDbBackedSessionHandler</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QDbBackedSessionHandler</h1>
+
+
+	<div class="description">
+	<p>Created by vaibhav on 1/28/12 (3:34 AM).</p>
+
+<p>This file contains the QDbBackedSessionHandler class.</p>
+
+<p>Relies on a SQL database table with the following columns: id - STRING primary key last_access_time - INT data - BLOB or BINARY or VARBINARY. Must be a binary safe column, and capable of holding the maximum size of session data for your app, which depends on what you are putting in the $_SESSION variable.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-QBaseClass.html"><span>QBaseClass</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>QDbBackedSessionHandler</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Sessions.html">Sessions</a><br>
+
+			<b>Located at</b> <a href="source-class-QDbBackedSessionHandler.html#3-249" title="Go to source code">includes/framework/QDbBackedSessionHandler.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="Initialize" id="_Initialize">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_Initialize">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#40-77" title="Go to source code">Initialize</a>( <span>integer <var>$intDbIndex</var> = <span class="php-num">1</span></span>, <span>string <var>$strTableName</var> = <span class="php-quote">&quot;qc_session&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$intDbIndex</var></dt>
+					<dd>The index in the database array</dd>
+					<dt><var>$strTableName</var></dt>
+					<dd>The table name to be used for saving sessions.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception|<code><a href="class-QCallerException.html">QCallerException</a></code>|<code><a href="class-QInvalidCastException.html">QInvalidCastException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SessionOpen" id="_SessionOpen">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SessionOpen">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#79-90" title="Go to source code">SessionOpen</a>( <span>string <var>$save_path</var></span>, <span>string <var>$session_name</var></span> )</code>
+
+		<div class="description short">
+			<p>Open the session (used by PHP when the session handler is active)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Open the session (used by PHP when the session handler is active)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$save_path</var></dt>
+					<dd></dd>
+					<dt><var>$session_name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SessionClose" id="_SessionClose">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SessionClose">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#92-99" title="Go to source code">SessionClose</a>( )</code>
+
+		<div class="description short">
+			<p>Close the session (used by PHP when the session handler is active)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Close the session (used by PHP when the session handler is active)</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SessionRead" id="_SessionRead">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SessionRead">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#101-145" title="Go to source code">SessionRead</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Read the session data (used by PHP when the session handler is active)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Read the session data (used by PHP when the session handler is active)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>the session data, base64 decoded
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SessionExists" id="_SessionExists">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SessionExists">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#147-169" title="Go to source code">SessionExists</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Tells whether a session by given name exists or not (used by PHP when the session handler is active)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Tells whether a session by given name exists or not (used by PHP when the session handler is active)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>Session ID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>does the session exist or not
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SessionWrite" id="_SessionWrite">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SessionWrite">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#171-207" title="Go to source code">SessionWrite</a>( <span>string <var>$id</var></span>, <span>string <var>$strSessionData</var></span> )</code>
+
+		<div class="description short">
+			<p>Write data to the session</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Write data to the session</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>The session ID</dd>
+					<dt><var>$strSessionData</var></dt>
+					<dd>Data to be written to the Session whose ID was supplied</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SessionDestroy" id="_SessionDestroy">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SessionDestroy">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#209-227" title="Go to source code">SessionDestroy</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Destroy the session for a given session ID</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Destroy the session for a given session ID</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>The session ID</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SessionGarbageCollect" id="_SessionGarbageCollect">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SessionGarbageCollect">#</a>
+		<code><a href="source-class-QDbBackedSessionHandler.html#229-248" title="Go to source code">SessionGarbageCollect</a>( <span>integer <var>$intMaxSessionLifetime</var></span> )</code>
+
+		<div class="description short">
+			<p>Garbage collect session data (delete/destroy sessions which are older than the max allowed lifetime)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Garbage collect session data (delete/destroy sessions which are older than the max allowed lifetime)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$intMaxSessionLifetime</var></dt>
+					<dd>The max session lifetime (in seconds)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-QBaseClass.html#methods">QBaseClass</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-QBaseClass.html#_OverrideAttributes">OverrideAttributes()</a>, 
+			<a href="class-QBaseClass.html#___call">__call()</a>, 
+			<a href="class-QBaseClass.html#___get">__get()</a>, 
+			<a href="class-QBaseClass.html#___set">__set()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="intDbIndex" id="$intDbIndex">
+		<td class="attributes"><code>
+			protected static 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDbBackedSessionHandler.html#18-21" title="Go to source code"><var>$intDbIndex</var></a>
+
+			<div class="description short">
+				<p>The index in the database array</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The index in the database array</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$intDbIndex" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strTableName" id="$strTableName">
+		<td class="attributes"><code>
+			protected static 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDbBackedSessionHandler.html#23-26" title="Go to source code"><var>$strTableName</var></a>
+
+			<div class="description short">
+				<p>The table name to be used for saving sessions.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The table name to be used for saving sessions.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strTableName" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="strSessionName" id="$strSessionName">
+		<td class="attributes"><code>
+			protected static 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDbBackedSessionHandler.html#28-31" title="Go to source code"><var>$strSessionName</var></a>
+
+			<div class="description short">
+				<p>The session name to be used for saving sessions.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The session name to be used for saving sessions.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$strSessionName" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="blnEncrypt" id="$blnEncrypt">
+		<td class="attributes"><code>
+			public static 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDbBackedSessionHandler.html#33-34" title="Go to source code"><var>$blnEncrypt</var></a>
+
+			<div class="description short">
+				<p>Whether to encrypt the session data. Highly recommended whenever sessions can authenticate a user.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to encrypt the session data. Highly recommended whenever sessions can authenticate a user.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$blnEncrypt" class="anchor">#</a>
+				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="blnCompress" id="$blnCompress">
+		<td class="attributes"><code>
+			public static 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-QDbBackedSessionHandler.html#36-37" title="Go to source code"><var>$blnCompress</var></a>
+
+			<div class="description short">
+				<p>Whether to compress the session data.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to compress the session data.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$blnCompress" class="anchor">#</a>
+				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
